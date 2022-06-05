@@ -263,3 +263,8 @@ img {
   font-size: 19px;
   margin-right: 4px;
 }
+
+/* About me */
+.me__description {
+  text-align: center;
+}
