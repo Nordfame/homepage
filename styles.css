@@ -241,3 +241,25 @@ img {
   font-size: 19px;
   margin-bottom: 4px;
 }
+
+/* Social */
+.social__container {
+  grid-template-columns: max-content;
+  gap: 16px;
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.social__link:hover {
+  color: var(--title-color);
+}
+
+.social__icon {
+  font-size: 19px;
+  margin-right: 4px;
+}
