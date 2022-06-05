@@ -365,3 +365,29 @@ img {
   color: var(--text-color-light);
   margin-bottom: 4px;
 }
+
+/* Scroll top */
+.scrolltop {
+  position: fixed;
+  right: 16px;
+  bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--container-color-alt);
+  border-radius: 6px;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+.scrolltop__icon {
+  font-size: 19px;
+  color: var(--text-color);
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 80px;
+}
