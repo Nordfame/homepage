@@ -347,3 +347,21 @@ img {
   border-radius: 50%;
   margin-right: 12px;
 }
+
+/* Interests */
+.interests__container {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: var(--mb-2);
+}
+
+.interests__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interests__icon {
+  font-size: 24px;
+  color: var(--text-color-light);
+  margin-bottom: 4px;
+}
