@@ -1,10 +1,291 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <title>Résumé</title>
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <title>Резюмé</title>
   </head>
+
   <body>
-    ― Hello World! &#x1F609;
+    <!-- Header -->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Андрій</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#profile" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Профіль
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#me" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Про мене
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bxs-graduation nav__icon"></i>Освіта
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Навички
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase nav__icon"></i>Досвід
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bxs-grid"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <div class="resume">
+        <div class="resume__left">
+          <!-- Profile -->
+          <section class="profile" id="profile">
+            <div class="profile__container section bd-grid">
+              <div class="profile__data bd-grid">
+                <img src="img/me.jpg" alt="" class="profile__img" />
+
+                <h1 class="profile__title">САВКА <b>АНДРІЙ</b></h1>
+                <h3 class="profile__employment">Студент</h3>
+              </div>
+
+              <div class="profile__address bd-grid">
+                <span class="profile__information">
+                  <i class="bx bx-map profile__icon"></i> Україна, м. Дрогобич,
+                  вул. Верховина, будинок 52
+                </span>
+                <span class="profile__information">
+                  <i class="bx bx-envelope profile__icon"></i>
+                  a.savka2001@gmail.com
+                </span>
+                <span class="profile__information">
+                  <i class="bx bx-phone profile__icon"></i> +380 68 113-87-10
+                </span>
+              </div>
+            </div>
+
+            <!-- Dark theme -->
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+          </section>
+
+          <!-- Social -->
+          <section class="social section">
+            <h2 class="section-title">Соціальні мережі</h2>
+
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.facebook.com/andrew322savka"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-facebook social__icon"></i> @andrew322savka
+              </a>
+              <a
+                href="https://www.instagram.com/_andrevv_/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-instagram social__icon"></i> @_andrevv_
+              </a>
+            </div>
+          </section>
+
+          <!-- Me -->
+          <section class="me section" id="me">
+            <h2 class="section-title">Про мене</h2>
+
+            <p class="me__description">
+              Швидко навчаюсь, бажання розвиватись, навички комунікації,
+              дисциплінований, відповідальний, пунктуальний, ініціативний,
+              здібний працювати в інтенсивному режимі.
+            </p>
+          </section>
+
+          <!-- Education -->
+          <section class="education section" id="education">
+            <h2 class="section-title">Освіта</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    ІНЖЕНЕРІЯ ПРОГРАМНОГО ЗАБЕЗПЕЧЕННЯ
+                  </h3>
+                  <span class="education__studies"
+                    >Дрогобицький механіко-технологічний коледж</span
+                  >
+                  <span class="education__year">2017 - 2021</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <!-- <span class="education__line"></span> -->
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">КОМП'ЮТЕРНІ НАУКИ</h3>
+                  <span class="education__studies"
+                    >Західноукраїнський національний універиситет</span
+                  >
+                  <span class="education__year">2021 - 2023</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Skills -->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Навички</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Git
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Html
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Css
+                </li>
+              </ul>
+
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Sass
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> JavaScript
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <!-- Experience -->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Досвід</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Оператор call-центра</h3>
+                  <span class="experience__company"
+                    >З 1 липня 2021 по 10 грудня 2021 | Київстар
+                  </span>
+                  <!-- <p class="experience__description"></p> -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Languages -->
+          <section class="languages section">
+            <h2 class="section-title">Знання мов</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Українська
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Російська
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Англійська (B1)
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Interests -->
+          <section class="interests section">
+            <h2 class="section-title">Інтереси</h2>
+
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <i class="bx bx-dumbbell interests__icon"></i>
+                <span class="interests__name">Фітнес</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bx-game interests__icon"></i>
+                <span class="interests__name">Відеоігри</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bx-film interests__icon"></i>
+                <span class="interests__name">Фільми</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bx-music interests__icon"></i>
+                <span class="interests__name">Музика</span>
+              </div>
+
+              <div class="interests__content">
+                <i class="bx bx-book interests__icon"></i>
+                <span class="interests__name">Читання</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scroll top -->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
   </body>
 </html>
