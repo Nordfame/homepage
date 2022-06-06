@@ -128,7 +128,7 @@ img {
 /* Layout */
 .bd-container {
   max-width: 968px;
-  width: calc(100% - 48px);
+  width: calc(100% - 3rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
 }
@@ -288,7 +288,7 @@ img {
   margin-right: 4px;
 }
 
-/* About me */
+/* Me */
 .me__description {
   text-align: center;
 }
@@ -426,7 +426,7 @@ img {
 
 @media screen and (min-width: 968px) {
   body {
-    margin: 48px 0;
+    margin: 3rem 0;
   }
 
   .bd-container {
@@ -456,7 +456,7 @@ img {
   }
 
   .section-title,
-  .me__desciprtion {
+  .me__description {
     text-align: initial;
   }
 
